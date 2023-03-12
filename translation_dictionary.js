@@ -65,6 +65,7 @@ var translate = {
 	"cheatiness": "nebrisum",
 	"radioactivity": "radio",
 	"stupidity": "stronito",
+	"wish":"desiderium",
 	"apocalypse": "terminus",
 	"equality": "aequalitas",
 	"madness": "vesania",
