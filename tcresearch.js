@@ -1,13 +1,13 @@
 $(function(){
-	var latest_version = "5.1.3";
+	var default_version = "4.2.2.0";
 	$.each(version_dictionary, function(key,version){
 		$("#version").append("<option value="+key+">"+key+"</option>");
 	});
 	var aspects = [];
 	var addon_aspects;
 	var combinations = {};
-	$("#version").val(latest_version);
-	var version=latest_version;
+	$("#version").val(default_version);
+	var version=default_version;
 	graph = {};
 	function connect(aspect1, aspect2) {
 		function addConnection(from, to) {
