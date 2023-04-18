@@ -124,6 +124,9 @@ $(function(){
 			});
 		}
 	});
+	$("#sel_base").click(function(){
+		reset_aspects();
+	});
 	$("#sel_all").click(function(){
 		$(".aspect").each(function(){
 			$(this).find("img").attr("src", function(i,orig){ return orig.replace("mono", "color")});
