@@ -109,3 +109,7 @@
 	line-height:32px;
 	cursor:default;
 }
+body { 
+	width:800px;
+	margin:20px;
+}
