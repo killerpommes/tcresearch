@@ -96,7 +96,7 @@ $(function(){
 	check = document.getElementById("available");
 	steps = $("#spinner").spinner({
 		min: 1,
-		max: 10
+		max: 99
 	});
 	reset_aspects();
 	$('#swap_selections').click(function(){
