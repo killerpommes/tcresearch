@@ -1,5 +1,5 @@
 # Thaumcraft 4.1 Research Helper
-[Thaumcraft Research Helper](http://ythri.github.io/tcresearch/)
+[Thaumcraft Research Helper](https://killerpommes.github.io/tcresearch/)
 
 ## Using 
 Choose  **`From`** and **`To`** Aspects from your research note and minimum number of steps between those aspects. Then click  **`Find Connection`** and the script will search for the shortest path 
