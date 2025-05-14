@@ -71,5 +71,7 @@ var translate = {
 	"madness": "vesania",
 	"beginning": "primordium",
 	"constellation": "astrum",
-	"glory": "gloria"
+	"glory": "gloria",
+	"space": "caelum",
+	"boots": "tabernus"
 };
