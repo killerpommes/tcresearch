@@ -11,6 +11,10 @@ pnpm install
 pnpm dev
 ```
 
+The development server is exposed through Portless at
+[`https://tcresearch.localhost`](https://tcresearch.localhost). On the first
+run, Portless may prompt to trust its local certificate.
+
 ## Validation
 
 ```sh
