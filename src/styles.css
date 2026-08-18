@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  font-family:
+    "Segoe UI Variable", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --background: #0e0f11;
+  --foreground: #f2f0eb;
+  --surface: #15171a;
+  --muted: #1d1f22;
+  --muted-foreground: #9c9b96;
+  --input: #111315;
+  --border: #2a2d30;
+  --border-strong: #404348;
+  --primary: #c99755;
+  --primary-hover: #d4a869;
+  --primary-foreground: #17120b;
+  --ring: rgb(201 151 85 / 0.32);
+  --danger: #f2a39b;
+  --danger-border: #663c39;
+  --danger-muted: #251817;
+  --warning: #e1b977;
+  --warning-border: #604b2b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100dvh;
+  background:
+    radial-gradient(circle at 80% -20%, rgb(201 151 85 / 0.06), transparent 32rem),
+    var(--background);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button,
+summary,
+select,
+input[type="checkbox"] {
+  -webkit-tap-highlight-color: transparent;
+}
+
+select option {
+  background: var(--surface);
+  color: var(--foreground);
+}
+
+::selection {
+  background: rgb(201 151 85 / 0.28);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background: var(--border-strong);
+  background-clip: content-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

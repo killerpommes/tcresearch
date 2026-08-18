@@ -1,4 +1,4 @@
-var translate = {
+export const translations: Record<string, string> = {
 	"air": "aer",
 	"earth": "terra",
 	"fire": "ignis",

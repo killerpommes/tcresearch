@@ -1,4 +1,6 @@
-var version_dictionary = {
+import type { VersionData } from "../lib/research-types";
+
+export const versionDictionary: Record<string, VersionData> = {
 	"4.1.0g": {
 		"base_aspects":[
 		"air",

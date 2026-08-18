@@ -1,15 +1,27 @@
-# Thaumcraft 4.1 Research Helper
-[Thaumcraft Research Helper](https://killerpommes.github.io/tcresearch/)
+# Thaumcraft Research Helper
 
-## Using 
-Choose  **`From`** and **`To`** Aspects from your research note and minimum number of steps between those aspects. Then click  **`Find Connection`** and the script will search for the shortest path 
-(well, with at least the minimum length) that connects the two aspects.
+A lightweight React and TypeScript rebuild of the [Thaumcraft Research Helper](https://killerpommes.github.io/tcresearch/).
 
-## Note
-Sometimes the length of any path is longer then the given minimum, but this should not be a problem for your research note.
+Choose the fixed **From** and **To** aspects from a research note, enter the number of blank spaces between them, and select **Find connection**. The pathfinder returns the shortest route while preferring aspects marked as available.
 
-## Disabling aspects
-If your are unhappy with the path you got, because you do not have access to those aspects yet or they are quite rare, 
-simply disable those aspects from Available Aspects:. The script will then try to find paths without these. Note that 
-this may cause the path to grow longer. If too many aspects are disabled and there are no paths left without any of 
-those, the script will try to find the shortest path using the minimal number of disabled aspects.
+## Development
+
+```sh
+pnpm install
+pnpm dev
+```
+
+## Validation
+
+```sh
+pnpm lint
+pnpm build
+```
+
+## Availability
+
+Disable aspects you cannot craft in the aspect library. Addon aspect groups can be enabled from the setup panel. If no fully available route exists, the pathfinder falls back to the route with the fewest unavailable aspects.
+
+## License
+
+Licensed under [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/). Original project by [ythri](https://github.com/ythri/tcresearch).

@@ -1,4 +1,6 @@
-var addon_dictionary = {
+import type { AddonData } from "../lib/research-types";
+
+export const addonDictionary: Record<string, AddonData> = {
     "fm": {
         "name": "Forbidden Magic",
         "aspects": ["wrath", "nether", "gluttony", "envy", "sloth", "pride", "lust"],
